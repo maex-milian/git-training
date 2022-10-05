@@ -1,9 +1,11 @@
-on:
-  push:
-    branches:
-    - ''
-steps:
-- uses: actions/checkout@2v
-- uses: actions/setup-node@2v
-- run: npm install
-- run: npm run test
+name: learn-github-actions
+run-name: ${{ github.actor }} is learning GitHub Actions
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@2v
+      - uses: actions/setup-node@2v
+      - run: npm install
+      - run: npm run test
