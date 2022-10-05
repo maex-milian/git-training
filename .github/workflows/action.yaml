@@ -1,3 +1,7 @@
+on:
+  push:
+    branches:
+    - ''
 steps:
 - uses: actions/checkout@2v
 - uses: actions/setup-node@2v
