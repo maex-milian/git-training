@@ -1,0 +1,5 @@
+steps:
+- uses: actions/checkout@2v
+- uses: actions/setup-node@2v
+- run: npm install
+- run: npm run test
