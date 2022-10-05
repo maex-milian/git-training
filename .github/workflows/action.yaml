@@ -5,7 +5,7 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@2v
-      - uses: actions/setup-node@2v
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
       - run: npm install
       - run: npm run test
